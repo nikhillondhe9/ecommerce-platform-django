@@ -72,7 +72,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'greatkart.wsgi.application'
 
-AUTH_USER_MODE = 'accounts.Account'
+AUTH_USER_MODEL = 'accounts.Account'
 
 
 # Database
@@ -127,3 +127,6 @@ STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = [
     'greatkart/static',
 ]
+# media files configuration
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
